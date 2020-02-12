@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="category" table="x_84446_todo_do" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Todo</label>
+            <language>en</language>
+            <name>x_84446_todo_do</name>
+            <sequence>0</sequence>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2020-01-02 22:05:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f2ca95e6db8e441006fc7b6039961959</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2020-01-02 22:05:32</sys_updated_on>
+            <value>Todo</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Personal</label>
+            <language>en</language>
+            <name>x_84446_todo_do</name>
+            <sequence>1</sequence>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2020-01-02 22:05:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f6ca95e6db8e441006fc7b603996195b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2020-01-02 22:05:32</sys_updated_on>
+            <value>Personal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oculus</label>
+            <language>en</language>
+            <name>x_84446_todo_do</name>
+            <sequence>2</sequence>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2020-01-02 22:05:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f6ca95e6db8e441006fc7b603996195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2020-01-02 22:05:32</sys_updated_on>
+            <value>Oculus</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kuna</label>
+            <language>en</language>
+            <name>x_84446_todo_do</name>
+            <sequence>3</sequence>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2020-01-02 22:05:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f6ca95e6db8e441006fc7b603996195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2020-01-02 22:05:32</sys_updated_on>
+            <value>Kuna</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Work</label>
+            <language>en</language>
+            <name>x_84446_todo_do</name>
+            <sequence>4</sequence>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2020-01-08 22:17:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8827546cdbd2001006fc7b60399619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2020-01-08 22:17:44</sys_updated_on>
+            <value>Work</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <name>x_84446_todo_do</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2019-12-29 22:10:44</sys_created_on>
+            <sys_id>08a53059db0a001006fc7b6039961921</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>category</sys_name>
+            <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+            <sys_update_name>sys_choice_x_84446_todo_do_category</sys_update_name>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2019-12-29 22:10:44</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

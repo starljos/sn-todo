@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function (spUtil, $scope) {
+  /* widget controller */
+  var c = this;
+
+  $scope.channels = [
+
+    {
+      'id': 'CM82EKSHX',
+      'label': '#general'
+    },
+    {
+      'id': 'CMHS395UG',
+      'label': '#nuta-do-pracy'
+    },
+    {
+      'id': 'CN4U6K90T',
+      'label': '#pokierek'
+    },
+    {
+      'id': 'CM82EKTFT',
+      'label': '#random'
+    },
+    {
+      'id': 'CM30FBKNX',
+      'label': '#servicenow'
+    },
+    {
+      'id': 'GQ2CSJ0VD',
+      'label': '#snc'
+    },
+    {
+      'id': 'CQ2S1L1D2',
+      'label': '#test'
+    },
+    {
+      'id': 'UMEDPPMEZ',
+      'label': 'IM: Marek'
+    },
+    {
+      'id': 'UMG9FBNLX',
+      'label': 'IM: Jarek'
+    },
+    {
+      'id': 'UMJ8DCXKR',
+      'label': 'IM: Kuba'
+    },
+    {
+      'id': 'UMA15RWN5',
+      'label': 'IM: Marcin'
+    }
+
+  ]
+
+  $scope.impersonations = [
+
+    {
+      'id': "v",
+      //emoji = ":vector:"
+      'label': "Vector"
+    },
+
+    {
+      'id': "s",
+      //emoji = ":stonoga1:"
+      'label': "Zbigniew"
+    },
+
+    {
+      'id': "w",
+      //emoji = ":lenny_w:"
+      'label': "Watson"
+    },
+
+    {
+      'id': "p",
+      //emoji = ":jp2:"
+      'label': "Jan Paweł"
+    },
+
+    {
+      'id': "q",
+      //emoji = ":quokka:"
+      'label': "Google"
+    }
+  ]
+
+  c.onload = function () {
+    c.server.update();
+    alert('halo')
+  }
+
+  $scope.channelLength = $scope.channels.length;
+  $scope.impersonationsLength = $scope.impersonations.length + 1;
+
+  $scope.send = function () {
+
+    //spUtil.addInfoMessage("Sending");
+    c.server.update();
+
+  }
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>todo</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Todo</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function () {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	if (input) {
+
+		gs.addInfoMessage('server!');
+		data.kupa = 'hehe';
+
+		var request = new sn_ws.RESTMessageV2();
+		request.setEndpoint('https://dev81817.service-now.com/api/now/table/x_84446_todo_do');
+		//?sysparm_limit=10
+		request.setHttpMethod('GET');
+
+		//Eg. UserName="admin", Password="admin" for this code sample.
+		var user = 'marek.polasik';
+		var password = 'JZ,]3]}EPn';
+
+		request.setBasicAuth(user, password);
+		request.setRequestHeader("Accept", "application/json");
+
+		var response = request.execute();
+		var responseData = response.getBody();
+		responseData = JSON.parse(responseData).result;
+
+		//gs.info(responseData[0].number);
+
+		var result = responseData.map(function (todo) {
+			var ob = {};
+			ob.number = todo.number;
+			ob.short_description = todo.short_description;
+			ob.category = todo.category;
+			return ob;
+		});
+
+		data.todos = result;
+
+		//gs.addInfoMessage(JSON.stringify(data.todos));
+		//gs.addInfoMessage(data.todos[0].number);
+
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-02-08 09:40:21</sys_created_on>
+        <sys_id>4c1359dadbbec01006fc7b6039961960</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Todo</sys_name>
+        <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+        <sys_update_name>sp_widget_4c1359dadbbec01006fc7b6039961960</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-02-09 13:31:56</sys_updated_on>
+        <template><![CDATA[<div>
+    <h1>
+        {{data.todos[0].number}}
+    </h1>
+
+    <div ng-init="c.onload()">
+        <p ng-repeat="item in data.todos">
+            {{item.number}} | {{item.category}} | {{item.short_description}}
+        </p>
+    </div>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Todo" language="en" table="x_84446_todo_do">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Todo</label>
+            <language>en</language>
+            <name>x_84446_todo_do</name>
+            <plural>Todos</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2019-12-29 16:59:49</sys_created_on>
+            <sys_id>e97e238ddb82001006fc7b60399619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Todo</sys_name>
+            <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+            <sys_update_name>sys_documentation_x_84446_todo_do__en</sys_update_name>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2019-12-29 16:59:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

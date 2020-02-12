@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_84446_todo_do">x_84446_todo_do</category>
+        <maximum_digits>0</maximum_digits>
+        <number>100</number>
+        <prefix>TODO</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2019-12-29 19:47:09</sys_created_on>
+        <sys_id>f0c49c5ddb46001006fc7b60399619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TODO</sys_name>
+        <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+        <sys_update_name>sys_number_f0c49c5ddb46001006fc7b60399619e1</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2019-12-29 19:47:09</sys_updated_on>
+    </sys_number>
+</record_update>

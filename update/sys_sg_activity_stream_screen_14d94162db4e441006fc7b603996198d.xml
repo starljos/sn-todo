@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_activity_stream_screen">
+    <sys_sg_activity_stream_screen action="INSERT_OR_UPDATE">
+        <add_additional_comment_button>false</add_additional_comment_button>
+        <add_attachment_button>true</add_attachment_button>
+        <add_work_note_button>true</add_work_note_button>
+        <application_roles/>
+        <available_offline>false</available_offline>
+        <data_item display_value="agent_new_cases">eb86ccc573f223009234c346c4f6a79a</data_item>
+        <description/>
+        <dynamic_prefetch_count/>
+        <fetch_type>background</fetch_type>
+        <hidden>false</hidden>
+        <hide_filters>false</hide_filters>
+        <icon display_value="paper-plane">5dc4bd2affca1300f1f2883b73e11ccb</icon>
+        <name>Activity Stream</name>
+        <order>20</order>
+        <parent>3ca7840973f223009234c346c4f6a704</parent>
+        <parent_table>sys_sg_master_item</parent_table>
+        <roles_override/>
+        <sys_class_name>sys_sg_activity_stream_screen</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-01-02 20:51:21</sys_created_on>
+        <sys_id>14d94162db4e441006fc7b603996198d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Activity Stream</sys_name>
+        <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+        <sys_update_name>sys_sg_activity_stream_screen_14d94162db4e441006fc7b603996198d</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-01-02 20:51:39</sys_updated_on>
+        <table>sn_customerservice_case</table>
+    </sys_sg_activity_stream_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=14d94162db4e441006fc7b603996198d"/>
+</record_update>

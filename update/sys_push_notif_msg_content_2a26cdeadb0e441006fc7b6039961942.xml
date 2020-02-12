@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_msg_content">
+    <sys_push_notif_msg_content action="INSERT_OR_UPDATE">
+        <name>New Todo</name>
+        <push_app display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</push_app>
+        <script><![CDATA[(function buildJSON(/*GlideRecord*/ current, /*String*/ message, /*Object*/ attributes) {
+
+    var layoutFieldGenerator = new global.NotificationLayoutFieldGenerator();
+    var identifier = layoutFieldGenerator.layoutField(current.sys_class_name, current.sys_id, "number");
+    var description = layoutFieldGenerator.layoutField(current.sys_class_name, current.sys_id, "short_description");
+    var status = layoutFieldGenerator.layoutField(current.sys_class_name, current.sys_id, "priority");
+    
+	var deepLinkGenerator = new global.MobileDeepLinkGenerator("Agent");
+	var link = deepLinkGenerator.getFormScreenLink("14d94162db4e441006fc7b603996198d", current.getTableName(), current.getValue("sys_id"));
+	
+	var json = {};
+	
+	json = {
+        "aps" : {
+            "sound" : "default"
+        },
+		"Link": link,
+        "Layout" : {
+             "Status": status,
+             "Identifier" : identifier,
+             "Description" : description
+        }
+    };
+    
+    return json;
+    
+})(current, message, attributes);]]></script>
+        <sys_class_name>sys_push_notif_msg_content</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-01-02 20:36:44</sys_created_on>
+        <sys_id>2a26cdeadb0e441006fc7b6039961942</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>New Todo</sys_name>
+        <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+        <sys_update_name>sys_push_notif_msg_content_2a26cdeadb0e441006fc7b6039961942</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-01-02 21:33:00</sys_updated_on>
+    </sys_push_notif_msg_content>
+</record_update>
