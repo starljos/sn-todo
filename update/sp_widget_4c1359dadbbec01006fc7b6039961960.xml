@@ -2,108 +2,69 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[function (spUtil, $scope) {
-  /* widget controller */
-  var c = this;
+	/* widget controller */
+	var c = this;
 
-  $scope.channels = [
 
-    {
-      'id': 'CM82EKSHX',
-      'label': '#general'
-    },
-    {
-      'id': 'CMHS395UG',
-      'label': '#nuta-do-pracy'
-    },
-    {
-      'id': 'CN4U6K90T',
-      'label': '#pokierek'
-    },
-    {
-      'id': 'CM82EKTFT',
-      'label': '#random'
-    },
-    {
-      'id': 'CM30FBKNX',
-      'label': '#servicenow'
-    },
-    {
-      'id': 'GQ2CSJ0VD',
-      'label': '#snc'
-    },
-    {
-      'id': 'CQ2S1L1D2',
-      'label': '#test'
-    },
-    {
-      'id': 'UMEDPPMEZ',
-      'label': 'IM: Marek'
-    },
-    {
-      'id': 'UMG9FBNLX',
-      'label': 'IM: Jarek'
-    },
-    {
-      'id': 'UMJ8DCXKR',
-      'label': 'IM: Kuba'
-    },
-    {
-      'id': 'UMA15RWN5',
-      'label': 'IM: Marcin'
-    }
 
-  ]
+	$scope.onload = function () {
+		//server.update();
+		//console.log("hehe")
+	}
 
-  $scope.impersonations = [
 
-    {
-      'id': "v",
-      //emoji = ":vector:"
-      'label': "Vector"
-    },
-
-    {
-      'id': "s",
-      //emoji = ":stonoga1:"
-      'label': "Zbigniew"
-    },
-
-    {
-      'id': "w",
-      //emoji = ":lenny_w:"
-      'label': "Watson"
-    },
-
-    {
-      'id': "p",
-      //emoji = ":jp2:"
-      'label': "Jan Paweł"
-    },
-
-    {
-      'id': "q",
-      //emoji = ":quokka:"
-      'label': "Google"
-    }
-  ]
-
-  c.onload = function () {
-    c.server.update();
-    alert('halo')
-  }
-
-  $scope.channelLength = $scope.channels.length;
-  $scope.impersonationsLength = $scope.impersonations.length + 1;
-
-  $scope.send = function () {
-
-    //spUtil.addInfoMessage("Sending");
-    c.server.update();
-
-  }
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>.panel-default {
+  border-color: #000;
+  margin: 0;
+}
+
+.panel-heading,
+.panel-footer {
+  background-color: #2a2a2a;
+  color: #d7d7d7;
+  margin: 0;
+}
+
+.panel-body {
+  background-color: #d93a03;
+  color: #000000;
+  margin: 0;
+}
+
+body {
+  font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #d7d7d7;
+}
+
+.wrapper {
+  width: 85%;
+}
+
+.item-wrapper {
+  border: 2px solid yellow;
+}
+
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
+}
+
+.checkbox {
+	border: 2px solid green;
+  float: left;
+  margin: auto;
+}
+
+.description {
+	border: 2px solid purple;
+  margin-left: 60px;
+}</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -121,10 +82,7 @@
 	/* populate the 'data' object */
 	/* e.g., data.table = $sp.getValue('table'); */
 
-	if (input) {
-
-		gs.addInfoMessage('server!');
-		data.kupa = 'hehe';
+	if (!input) {
 
 		var request = new sn_ws.RESTMessageV2();
 		request.setEndpoint('https://dev81817.service-now.com/api/now/table/x_84446_todo_do');
@@ -156,33 +114,46 @@
 
 		//gs.addInfoMessage(JSON.stringify(data.todos));
 		//gs.addInfoMessage(data.todos[0].number);
-
 	}
+
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
         <sys_created_on>2020-02-08 09:40:21</sys_created_on>
         <sys_id>4c1359dadbbec01006fc7b6039961960</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>110</sys_mod_count>
         <sys_name>Todo</sys_name>
         <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
         <sys_update_name>sp_widget_4c1359dadbbec01006fc7b6039961960</sys_update_name>
         <sys_updated_by>marek.polasik</sys_updated_by>
-        <sys_updated_on>2020-02-09 13:31:56</sys_updated_on>
-        <template><![CDATA[<div>
-    <h1>
-        {{data.todos[0].number}}
-    </h1>
+        <sys_updated_on>2020-03-22 11:28:44</sys_updated_on>
+        <template><![CDATA[<div class="wrapper">
+  
 
-    <div ng-init="c.onload()">
-        <p ng-repeat="item in data.todos">
-            {{item.number}} | {{item.category}} | {{item.short_description}}
-        </p>
+  <div ng-init="onload()">
+    <div ng-repeat="item in data.todos">
+
+
+      <div class="item-wrapper">
+        <div class="btn-group checkbox" data-toggle="buttons">
+          <label class="btn btn-danger">
+            <input type="checkbox" autocomplete="off" unchecked>
+            <span class="glyphicon glyphicon-ok"></span>
+          </label>
+        </div>
+
+        <div class="description">
+          <h4>{{item.short_description}}</h4>
+        </div>
+      </div>
+
     </div>
-
+    <div>
+    </div>   
+  </div>
 </div>]]></template>
     </sp_widget>
 </record_update>

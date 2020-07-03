@@ -4,6 +4,25 @@
             <dependent_value/>
             <element>category</element>
             <hint/>
+            <inactive>true</inactive>
+            <label>Personal</label>
+            <language>en</language>
+            <name>x_84446_todo_do</name>
+            <sequence>0</sequence>
+            <sys_created_by>marek.polasik</sys_created_by>
+            <sys_created_on>2020-01-02 22:05:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f6ca95e6db8e441006fc7b603996195b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>marek.polasik</sys_updated_by>
+            <sys_updated_on>2020-04-12 15:36:08</sys_updated_on>
+            <value>Personal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
             <inactive>false</inactive>
             <label>Todo</label>
             <language>en</language>
@@ -23,20 +42,20 @@
             <dependent_value/>
             <element>category</element>
             <hint/>
-            <inactive>false</inactive>
-            <label>Personal</label>
+            <inactive>true</inactive>
+            <label>Done</label>
             <language>en</language>
             <name>x_84446_todo_do</name>
             <sequence>1</sequence>
             <sys_created_by>marek.polasik</sys_created_by>
-            <sys_created_on>2020-01-02 22:05:32</sys_created_on>
+            <sys_created_on>2020-04-12 15:36:08</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f6ca95e6db8e441006fc7b603996195b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>273ac4cbdbc8501006fc7b603996196b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>marek.polasik</sys_updated_by>
-            <sys_updated_on>2020-01-02 22:05:32</sys_updated_on>
-            <value>Personal</value>
+            <sys_updated_on>2020-04-12 15:37:15</sys_updated_on>
+            <value>Done</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -46,15 +65,15 @@
             <label>Oculus</label>
             <language>en</language>
             <name>x_84446_todo_do</name>
-            <sequence>2</sequence>
+            <sequence>1</sequence>
             <sys_created_by>marek.polasik</sys_created_by>
             <sys_created_on>2020-01-02 22:05:32</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f6ca95e6db8e441006fc7b603996195d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>marek.polasik</sys_updated_by>
-            <sys_updated_on>2020-01-02 22:05:32</sys_updated_on>
+            <sys_updated_on>2020-04-12 15:36:08</sys_updated_on>
             <value>Oculus</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -65,15 +84,15 @@
             <label>Kuna</label>
             <language>en</language>
             <name>x_84446_todo_do</name>
-            <sequence>3</sequence>
+            <sequence>2</sequence>
             <sys_created_by>marek.polasik</sys_created_by>
             <sys_created_on>2020-01-02 22:05:32</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f6ca95e6db8e441006fc7b603996195f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>marek.polasik</sys_updated_by>
-            <sys_updated_on>2020-01-02 22:05:32</sys_updated_on>
+            <sys_updated_on>2020-04-12 15:36:08</sys_updated_on>
             <value>Kuna</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -84,15 +103,15 @@
             <label>Work</label>
             <language>en</language>
             <name>x_84446_todo_do</name>
-            <sequence>4</sequence>
+            <sequence>3</sequence>
             <sys_created_by>marek.polasik</sys_created_by>
             <sys_created_on>2020-01-08 22:17:44</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>8827546cdbd2001006fc7b60399619cf</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>marek.polasik</sys_updated_by>
-            <sys_updated_on>2020-01-08 22:17:44</sys_updated_on>
+            <sys_updated_on>2020-04-12 15:36:08</sys_updated_on>
             <value>Work</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
