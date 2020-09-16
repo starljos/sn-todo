@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Get Todos</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var responseArray = [];
+
+	var gr = new GlideRecord('x_84446_todo_do');
+	gr.orderBy('number');
+	gr.setLimit(10);
+	gr.query();
+	while (gr.next()) {
+
+		var ob = {};
+		for (property in gr) {
+
+			if (gr[property]) {
+				ob[property] = gr[property] + '';
+			}
+		}
+		responseArray.push(ob);
+	}
+
+	response.setStatus(200);
+	response.setContentType('application/json');
+	response.getStreamWriter().writeString(JSON.stringify(responseArray));
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_84446_todo/todo_api/get_todos</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/get_todos</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-09-16 21:16:59</sys_created_on>
+        <sys_id>ec793121db13d41006fc7b6039961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Todos</sys_name>
+        <sys_package display_value="Kuna Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+        <sys_update_name>sys_ws_operation_ec793121db13d41006fc7b6039961985</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-09-16 21:16:59</sys_updated_on>
+        <web_service_definition display_value="Todo API">6149bdeddbdf941006fc7b60399619ee</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

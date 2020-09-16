@@ -6,7 +6,7 @@
         <sys_created_on>2019-12-29 16:59:49</sys_created_on>
         <sys_id>617e638ddb82001006fc7b6039961920</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+        <sys_package display_value="Kuna Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
         <sys_updated_by>marek.polasik</sys_updated_by>
         <sys_updated_on>2019-12-29 16:59:49</sys_updated_on>
     </sys_package_dependency_m2m>

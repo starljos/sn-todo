@@ -63,7 +63,7 @@ Overriden for cmdb_ci to prevent display when form is being used for a proposed 
     </sys_ui_action>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</application>
+        <application display_value="Kuna Todo">1a8d2bc9db82001006fc7b60399619f2</application>
         <file_path/>
         <instance_id>c6c265c7db783f0042b321c40596199a</instance_id>
         <instance_name>dev81817</instance_name>
@@ -107,10 +107,10 @@ Overriden for cmdb_ci to prevent display when form is being used for a proposed 
         <sys_metadata>522560d0db2d101006fc7b6039961997</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Insert and Stay</sys_name>
-        <sys_package display_value="Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+        <sys_package display_value="Kuna Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
         <sys_parent display_value="Todo">fb2e6b4ddb82001006fc7b6039961988</sys_parent>
         <sys_policy/>
-        <sys_scope display_value="Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+        <sys_scope display_value="Kuna Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
         <sys_scope_delete display_value="">3298a136cd474900b8b175e94a608c10</sys_scope_delete>
         <sys_update_name>sys_ui_action_522560d0db2d101006fc7b6039961997</sys_update_name>
         <sys_update_version display_value="sys_ui_action_522560d0db2d101006fc7b6039961997">9035ec9cdbe9101006fc7b6039961925</sys_update_version>

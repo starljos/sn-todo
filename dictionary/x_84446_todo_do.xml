@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Todo" max_length="40" name="x_84446_todo_do" sizeclass="121" type="collection">
+    <element audit="true" extends="task" label="Todo" max_length="40" name="x_84446_todo_do" sizeclass="164" type="collection">
         <element choice="3" default="Todo" label="Category" max_length="40" name="category" type="choice">
             <choice>
                 <element inactive="true" inactive_on_update="true" label="Personal" sequence="0" value="Personal"/>
@@ -8,8 +8,11 @@
                 <element inactive_on_update="false" label="Oculus" sequence="1" value="Oculus"/>
                 <element inactive_on_update="false" label="Kuna" sequence="2" value="Kuna"/>
                 <element inactive_on_update="false" label="Work" sequence="3" value="Work"/>
+                <element inactive_on_update="false" label="GTask" sequence="4" value="GTask"/>
             </choice>
         </element>
         <element label="Created From" max_length="32" name="created_from" reference="x_84446_vector_slack_event" type="reference"/>
+        <element label="Due" max_length="40" name="due" type="glide_date_time"/>
+        <element label="Source id" max_length="200" name="source_id" type="string"/>
     </element>
 </database>
