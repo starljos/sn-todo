@@ -6,8 +6,10 @@
         <dynamic_title_structure/>
         <id>todo</id>
         <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
         <public>false</public>
         <roles/>
+        <seo_script/>
         <short_description/>
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>marek.polasik</sys_created_by>
@@ -22,6 +24,7 @@
         <sys_updated_by>marek.polasik</sys_updated_by>
         <sys_updated_on>2020-02-08 09:39:34</sys_updated_on>
         <title>Todo</title>
+        <use_seo_script>false</use_seo_script>
     </sp_page>
     <sys_translated_text action="delete_multiple" query="documentkey=ace2599adbbec01006fc7b6039961989"/>
 </record_update>

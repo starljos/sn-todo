@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_client_template">
+    <sys_email_client_template action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body/>
+        <body_html/>
+        <condition/>
+        <content_type>text/html</content_type>
+        <copied/>
+        <email_client_from_address/>
+        <from/>
+        <from_generation_type/>
+        <name>Todo mail 1</name>
+        <order>100</order>
+        <recipients/>
+        <reply_to/>
+        <script_from><![CDATA[(function (fromAddressQuery, targetRecord) {
+		/**
+		 * fromAddressQuery: A GlideRecord on the table "sys_email_client_from_address". Add conditions to filter the
+		 * 		the email addresses displayed in the Email Client. 
+		 * targetRecord: A GlideRecord representing the record in which the Email Client was opened from
+		 */
+
+})(fromAddressQuery, targetRecord);]]></script_from>
+        <subject>hello</subject>
+        <sys_class_name>sys_email_client_template</sys_class_name>
+        <sys_created_by>marek.polasik</sys_created_by>
+        <sys_created_on>2020-11-19 12:59:04</sys_created_on>
+        <sys_id>c38da142dbe4e01006fc7b60399619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Todo mail 1</sys_name>
+        <sys_package display_value="Kuna Todo" source="x_84446_todo">1a8d2bc9db82001006fc7b60399619f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Kuna Todo">1a8d2bc9db82001006fc7b60399619f2</sys_scope>
+        <sys_update_name>sys_email_client_template_c38da142dbe4e01006fc7b60399619b6</sys_update_name>
+        <sys_updated_by>marek.polasik</sys_updated_by>
+        <sys_updated_on>2020-11-19 12:59:04</sys_updated_on>
+        <table>x_84446_todo_do</table>
+    </sys_email_client_template>
+</record_update>

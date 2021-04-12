@@ -9,8 +9,10 @@
         <description/>
         <dynamic_prefetch_count/>
         <fetch_type>background</fetch_type>
+        <filter/>
         <hidden>false</hidden>
         <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
         <icon display_value="paper-plane">5dc4bd2affca1300f1f2883b73e11ccb</icon>
         <name>Activity Stream</name>
         <order>20</order>
